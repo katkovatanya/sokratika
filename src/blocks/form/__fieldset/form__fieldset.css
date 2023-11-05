@@ -1,0 +1,9 @@
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.form__fieldset:first-child {
+  width: 100%;
+}

@@ -1,0 +1,8 @@
+.form__drop-down-list-item {
+  margin: 0;
+  padding: 10px;
+}
+
+.form__drop-down-list-item:hover {
+  background-color: rgba(176, 198, 225, 0.26);
+}

@@ -1,0 +1,18 @@
+.form__input {
+  width: 100%;
+  max-width: 664px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  border: 1px solid #EAEAEA;
+  border-radius: 10px;
+  padding: 12px 20px;
+}
+
+.form__input:focus-visible {
+  outline: unset;
+}
+
+.form__input:focus {
+  border: 1px solid #5CBEFE;
+}

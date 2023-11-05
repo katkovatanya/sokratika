@@ -1,0 +1,6 @@
+.form__group {
+  display: flex;
+  max-width: 800px;
+  justify-content: space-between;
+  column-gap: 26px;
+}

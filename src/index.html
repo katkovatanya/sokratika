@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Сократика - заполни форму</title>
+  </head>
+
+  <body class="page">
+    <header class="header">
+      <img
+        class="header__logo"
+        src="<%=require('./images/logo.png')%>"
+        alt="логотип Сократика"
+      />
+    </header>
+    <main class="content">
+      <section class="illustration">
+        <img
+          src="<%=require('./images/girl-at-laptop.png')%>"
+          alt="Девушка за ноутбуком"
+        />
+      </section>
+      <section class="questionary">
+        <h1 class="questionary__title">01&nbsp;Заполни форму</h1>
+        <form class="form">
+          <div class="form__group">
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="lesson-topic">Тема урока</label>
+              <input
+                class="form__input"
+                type="text"
+                name="lesson-topic"
+                placeholder="Напиши что-то конкретное"
+              />
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="class">Класс </label>
+              <div class="form__drop-down">
+                <button class="form__drop-down-button" id="class" name="class">
+                  4
+                </button>
+                <ul class="form__drop-down-list">
+                  <li class="form__drop-down-list-item" data-value="first">
+                    1
+                  </li>
+                  <li class="form__drop-down-list-item" data-value="second">
+                    2
+                  </li>
+                  <li class="form__drop-down-list-item" data-value="third">
+                    3
+                  </li>
+                  <li
+                    class="form__drop-down-list-item form__drop-down-list-item_active"
+                    data-value="fourth"
+                  >
+                    4
+                  </li>
+                  <li class="form__drop-down-list-item" data-value="fifth">
+                    5
+                  </li>
+                </ul>
+                <input
+                  type="text"
+                  name="select-category"
+                  class="form__drop-down-input-hidden"
+                />
+              </div>
+            </fieldset>
+            <div class="topics">
+              <div class="topics">Генетика</div>
+              <div class="topics">Анатомия человека</div>
+              <div class="topics">Вулканы</div>
+              <div class="topics">Зимние виды спорта</div>
+              <div class="topics">Радуга</div>
+              <div class="topics">Индийская культура</div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

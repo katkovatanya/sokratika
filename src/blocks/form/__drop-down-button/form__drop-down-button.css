@@ -1,0 +1,23 @@
+.form__drop-down-button {
+  width: 120px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  border: 1px solid #EAEAEA;
+  border-radius: 10px;
+  padding: 12px 20px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fff;
+  background-image: url('../../../images/arrow-down.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.form__drop-down-button:focus {
+  border: 1px solid #5CBEFE;
+  background-image: url('../../../images/arrow-up.svg');
+}
