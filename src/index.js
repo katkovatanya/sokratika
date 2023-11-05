@@ -1,6 +1,7 @@
 import './pages/index.css';
 import { handleClickDropDownButton, handleClickDropDownItem } from './components/drop-down-list';
-import { dropDownButton, dropDownListItems, dropDownList } from './utils/constants';
+import { dropDownButton, dropDownListItems, dropDownList, arrayOfTopics, addButton } from './utils/constants';
+import { handleClickTopic, addTopic } from './components/input';
 
 
 dropDownButton.addEventListener('click', handleClickDropDownButton);
@@ -20,3 +21,9 @@ document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape' || e.key === 'Tab')
     dropDownList.classList.remove('form__drop-down-list_visible');
 })
+
+arrayOfTopics.forEach(item => {
+  item.addEventListener('click', handleClickTopic)
+})
+
+addButton.addEventListener('click', addTopic)

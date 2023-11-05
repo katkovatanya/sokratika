@@ -66,15 +66,23 @@
                 />
               </div>
             </fieldset>
-            <div class="topics">
-              <div class="topics">Генетика</div>
-              <div class="topics">Анатомия человека</div>
-              <div class="topics">Вулканы</div>
-              <div class="topics">Зимние виды спорта</div>
-              <div class="topics">Радуга</div>
-              <div class="topics">Индийская культура</div>
-            </div>
           </div>
+          <ul class="topics">
+            <li class="topic">Генетика</li>
+            <li class="topic">Анатомия человека</li>
+            <li class="topic">Вулканы</li>
+            <li class="topic">Зимние виды спорта</li>
+            <li class="topic">Радуга</li>
+            <li class="topic">Индийская культура</li>
+          </ul>
+          <button class="add-button">
+            <img src="<%=require('./images/add.svg')%>" alt="добавить" />
+            <p>Показать больше вариантов</p>
+          </button>
+          <fieldset class="form__fieldset">
+            <label class="form__label form__label_black">Цель урока</label>
+            <textarea class="form__textarea"></textarea>
+          </fieldset>
         </form>
       </section>
     </main>

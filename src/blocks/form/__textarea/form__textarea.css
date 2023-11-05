@@ -1,6 +1,6 @@
-.form__input {
-  width: 100%;
-  max-width: 644px;
+.form__textarea {
+  height: 100px;
+  max-width: 800px;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -10,10 +10,10 @@
 
 }
 
-.form__input:focus-visible {
+.form__textarea:focus-visible {
   outline: unset;
 }
 
-.form__input:focus {
+.form__textarea:focus {
   border: 1px solid #5CBEFE;
 }

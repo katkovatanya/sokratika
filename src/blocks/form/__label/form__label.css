@@ -4,11 +4,8 @@
   font-weight: 400;
   color: #3CA9F0;
   background-color: #fff;
-  margin-left: 5px;
+  margin-left: 14px;
   margin-bottom: -8px;
   z-index: 2;
-}
-
-.form__label:active {
-  border-color: #3CA9F0;
+  padding: 0 5px;
 }

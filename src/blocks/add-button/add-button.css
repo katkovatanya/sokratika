@@ -1,0 +1,10 @@
+.add-button {
+  background: none;
+  border: none;
+  display: flex;
+  color: #3CA9F0;
+  align-items: center;
+  column-gap: 8px;
+  cursor: pointer;
+  width: max-content;
+}
