@@ -1,7 +1,9 @@
 import './pages/index.css';
 import { handleClickDropDownButton, handleClickDropDownItem } from './components/drop-down-list';
-import { dropDownButton, dropDownListItems, dropDownList, arrayOfTopics, addButton, inputDeleteButton, inputTopic, secondLabel } from './utils/constants';
+import { dropDownButton, dropDownListItems, dropDownList, arrayOfTopics, addButton, inputDeleteButton, inputTopic, secondLabel, textArea, form } from './utils/constants';
 import { handleClickTopic, addTopic, handleClickDeleteButton, handleInputChange, handleInputClick, inputInactive } from './components/input';
+import { handleTextareaChange } from './components/textarea';
+import { handleSubmitForm, handleInputForm } from './components/form';
 
 
 dropDownButton.addEventListener('click', handleClickDropDownButton);
@@ -42,3 +44,7 @@ document.addEventListener('click', function (e) {
   }
 })
 
+textArea.addEventListener('input', handleTextareaChange);
+
+form.addEventListener('submit', handleSubmitForm);
+form.addEventListener('input', handleInputForm);

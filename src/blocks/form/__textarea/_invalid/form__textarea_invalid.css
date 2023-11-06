@@ -1,0 +1,11 @@
+.form__textarea_invalid {
+  border: 1px solid #FF395D;
+}
+
+.form__textarea_invalid:focus-visible {
+  outline: unset;
+}
+
+.form__textarea_invalid:focus {
+  border: 1px solid #FF395D;
+}

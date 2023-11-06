@@ -83,23 +83,29 @@
             <p class="add-button__text">Показать больше вариантов</p>
           </button>
           <fieldset class="form__fieldset form__textarea-box">
-            <label for="text" class="form__label"
-              >Цель урока</label
-            >
+            <label for="text" class="form__label">Цель урока</label>
             <textarea
               name="text"
               id="text"
-              maxlength="200"
               placeholder="Напиши свою учебную цель"
+              minlength="3"
+              maxlength="200"
               class="form__textarea"
             ></textarea>
-            <p class="form__textarea-count">0 / 200</p>
+            <span class="error"></span>
+            <span class="form__textarea-count">0 / 200</span>
           </fieldset>
+          <nav class="buttons">
+            <button class="back-button" type="button">Назад</button>
+            <button
+              class="next-button next-button_disabled"
+              type="submit"
+              disabled
+            >
+              Следующий шаг
+            </button>
+          </nav>
         </form>
-        <nav class="buttons">
-          <button class="back-button" type="button">Назад</button>
-          <button class="next-button next-button_disabled" type="submit" disabled>Следующий шаг</button>
-        </nav>
       </section>
     </main>
   </body>

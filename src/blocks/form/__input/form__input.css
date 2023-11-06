@@ -17,3 +17,12 @@
 .form__input:focus {
   border: 1px solid #5CBEFE;
 }
+
+.form__input::placeholder {
+  color: #9A9A9A;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  margin:0;
+  padding: 0;
+}

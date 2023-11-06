@@ -16,7 +16,16 @@ export const arrayOfLabel = document.querySelectorAll('.form__label');
 
 export const firstLabel = arrayOfLabel[0];
 export const secondLabel = arrayOfLabel[1];
+export const textareaLabel = arrayOfLabel[2];
 
-export const topics = ["Пеший туризм", "Философия", "Вселенная", "Здоровые привычки", "Бабочки", 
-"Белые медведи", "Экономика", "Финансовая грамотность", "Фотосинтез", "Искусство и культура", "Окружающая среда", 
-"Технологии и инновации", "Религия и духовность", "Экосистемы", "Языки и культуры", "Психология", "Обществознание", "Математика", "Океан"];
+//константы для textarea
+export const textArea = document.querySelector('.form__textarea');
+export const textareaCounter = document.querySelector('.form__textarea-count');
+
+//форма
+export const form = document.querySelector('.form');
+
+
+export const topics = ["Пеший туризм", "Философия", "Вселенная", "Здоровые привычки", "Бабочки",
+  "Белые медведи", "Экономика", "Финансовая грамотность", "Фотосинтез", "Искусство и культура", "Окружающая среда",
+  "Технологии и инновации", "Религия и духовность", "Экосистемы", "Языки и культуры", "Психология", "Обществознание", "Математика", "Океан"];
