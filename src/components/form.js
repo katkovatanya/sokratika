@@ -9,6 +9,7 @@ export function handleSubmitForm(e) {
     button.setAttribute("disabled", true);
     button.classList.add('next-button_disabled');
     inputDeleteButton.classList.remove('form__input-delete-button_visible');
+    textareaCounter.textContent = `0 / 200`;
   }
 }
 
