@@ -8,8 +8,12 @@
 @import url(../blocks/questionary/questionary.css);
 @import url(../blocks/questionary/__title/questionary__title.css);
 @import url(../blocks/form/form.css);
+@import url(../blocks/form/__input-box/form__input-box.css);
 @import url(../blocks/form/__input/form__input.css);
+@import url(../blocks/form/__input-delete-button/form__input-delete-button.css);
+@import url(../blocks/form/__input-delete-button/_visible/form__input-delete-button_visible.css);
 @import url(../blocks/form/__label/form__label.css);
+@import url(../blocks/form/__label/_blue/form__label_blue.css);
 @import url(../blocks/form/__drop-down/form__drop-down.css);
 @import url(../blocks/form/__drop-down-button/form__drop-down-button.css);
 @import url(../blocks/form/__fieldset/form__fieldset.css);
@@ -22,5 +26,11 @@
 @import url(../blocks/topics/topics.css);
 @import url(../blocks/topic/topic.css);
 @import url(../blocks/add-button/add-button.css);
+@import url(../blocks/add-button/__text/add-button__text.css);
+@import url(../blocks/form/__textarea-box/form__textarea-box.css);
 @import url(../blocks/form/__textarea/form__textarea.css);
-@import url(../blocks/form/__label/_black/form__label_black.css);
+@import url(../blocks/form/__textarea-count/form__textarea-count.css);
+@import url(../blocks/buttons/buttons.css);
+@import url(../blocks/back-button/back-button.css);
+@import url(../blocks/next-button/next-button.css);
+@import url(../blocks/next-button/_disabled/next-button_disabled.css);

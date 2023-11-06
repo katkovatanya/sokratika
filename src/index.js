@@ -1,7 +1,7 @@
 import './pages/index.css';
 import { handleClickDropDownButton, handleClickDropDownItem } from './components/drop-down-list';
-import { dropDownButton, dropDownListItems, dropDownList, arrayOfTopics, addButton } from './utils/constants';
-import { handleClickTopic, addTopic } from './components/input';
+import { dropDownButton, dropDownListItems, dropDownList, arrayOfTopics, addButton, inputDeleteButton, inputTopic, secondLabel } from './utils/constants';
+import { handleClickTopic, addTopic, handleClickDeleteButton, handleInputChange, handleInputClick, inputInactive } from './components/input';
 
 
 dropDownButton.addEventListener('click', handleClickDropDownButton);
@@ -12,8 +12,10 @@ dropDownListItems.forEach(item => {
 
 //закрытие кастомного выпадающего списка при клике вне списка
 document.addEventListener('click', function (e) {
-  if (e.target !== dropDownButton && e.target !== dropDownList)
+  if (e.target !== dropDownButton && e.target !== dropDownList) {
     dropDownList.classList.remove('form__drop-down-list_visible');
+    secondLabel.classList.remove('form__label_blue');
+  }
 })
 
 //закрытие кастомного выпадающего списка по нажатию на клавиши Esc и Tab
@@ -27,3 +29,16 @@ arrayOfTopics.forEach(item => {
 })
 
 addButton.addEventListener('click', addTopic)
+
+inputDeleteButton.addEventListener('click', handleClickDeleteButton);
+
+inputTopic.addEventListener('input', handleInputChange);
+
+inputTopic.addEventListener('click', handleInputClick);
+
+document.addEventListener('click', function (e) {
+  if (e.target !== inputTopic) {
+    inputInactive()
+  }
+})
+

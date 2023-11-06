@@ -1,0 +1,12 @@
+.back-button {
+  font-family: 'Inter', sans-serif;
+  padding: 18px 52px;
+  color: #3CA9F0;
+  background-color: #fff;
+  border: 1px solid #3CA9F0;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+}

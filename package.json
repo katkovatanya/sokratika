@@ -26,6 +26,7 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
+    "@fontsource/montserrat": "^5.0.15",
     "core-js": "^3.33.2"
   }
 }

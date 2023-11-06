@@ -26,12 +26,15 @@
           <div class="form__group">
             <fieldset class="form__fieldset">
               <label class="form__label" for="lesson-topic">Тема урока</label>
-              <input
-                class="form__input"
-                type="text"
-                name="lesson-topic"
-                placeholder="Напиши что-то конкретное"
-              />
+              <div class="form__input-box">
+                <input
+                  class="form__input"
+                  type="text"
+                  name="lesson-topic"
+                  placeholder="Напиши что-то конкретное"
+                />
+                <button class="form__input-delete-button"></button>
+              </div>
             </fieldset>
             <fieldset class="form__fieldset">
               <label class="form__label" for="class">Класс </label>
@@ -77,13 +80,26 @@
           </ul>
           <button class="add-button">
             <img src="<%=require('./images/add.svg')%>" alt="добавить" />
-            <p>Показать больше вариантов</p>
+            <p class="add-button__text">Показать больше вариантов</p>
           </button>
-          <fieldset class="form__fieldset">
-            <label class="form__label form__label_black">Цель урока</label>
-            <textarea class="form__textarea"></textarea>
+          <fieldset class="form__fieldset form__textarea-box">
+            <label for="text" class="form__label"
+              >Цель урока</label
+            >
+            <textarea
+              name="text"
+              id="text"
+              maxlength="200"
+              placeholder="Напиши свою учебную цель"
+              class="form__textarea"
+            ></textarea>
+            <p class="form__textarea-count">0 / 200</p>
           </fieldset>
         </form>
+        <nav class="buttons">
+          <button class="back-button" type="button">Назад</button>
+          <button class="next-button next-button_disabled" type="submit" disabled>Следующий шаг</button>
+        </nav>
       </section>
     </main>
   </body>
