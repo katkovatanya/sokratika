@@ -1,6 +1,13 @@
 .content {
   display: flex;
-  column-gap: 152px;
+  /* column-gap: 152px; */
+  justify-content: space-between;
   padding-top: 111px;
   padding-left: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+  .content {
+    flex-direction: column;
+  }
 }

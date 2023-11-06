@@ -1,8 +1,8 @@
 .form__input-delete-button {
   display: none;
   position: absolute;
-  top: 12px;
-  right: 5px;
+  top: 29px;
+  right: 6px;
   background-image: url(../../../images/delete.svg);
   background-position: center;
   background-repeat: no-repeat;

@@ -8,7 +8,6 @@
 @import url(../blocks/questionary/questionary.css);
 @import url(../blocks/questionary/__title/questionary__title.css);
 @import url(../blocks/form/form.css);
-@import url(../blocks/form/__input-box/form__input-box.css);
 @import url(../blocks/form/__input/form__input.css);
 @import url(../blocks/form/__input-delete-button/form__input-delete-button.css);
 @import url(../blocks/form/__input-delete-button/_visible/form__input-delete-button_visible.css);
