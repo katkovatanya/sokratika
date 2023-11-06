@@ -2,3 +2,15 @@
   display: flex;
   height: max-content;
 }
+
+@media screen and (max-width: 1200px) {
+  .illustration {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .illustration {
+    max-width: 100%;
+  }
+}

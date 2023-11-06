@@ -5,3 +5,11 @@
   line-height: 110%;
   margin: 40px 0 0;
 }
+
+
+@media screen and (max-width: 768px) {
+  .questionary__title {
+    font-size: 30px;
+    margin: 40px auto 0;
+  }
+}

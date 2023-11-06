@@ -16,6 +16,7 @@
     <main class="content">
       <section class="illustration">
         <img
+          class="illustration__img"
           src="<%=require('./images/girl-at-laptop.png')%>"
           alt="Девушка за ноутбуком"
         />
@@ -25,14 +26,14 @@
         <form class="form">
           <div class="form__group">
             <fieldset class="form__fieldset">
-                <label class="form__label" for="lesson-topic">Тема урока</label>
-                <input
-                  class="form__input"
-                  type="text"
-                  name="lesson-topic"
-                  placeholder="Напиши что-то конкретное"
-                />
-                <button class="form__input-delete-button"></button>
+              <label class="form__label" for="lesson-topic">Тема урока</label>
+              <input
+                class="form__input"
+                type="text"
+                name="lesson-topic"
+                placeholder="Напиши что-то конкретное"
+              />
+              <button class="form__input-delete-button"></button>
             </fieldset>
             <fieldset class="form__fieldset">
               <label class="form__label" for="class">Класс </label>
@@ -61,8 +62,8 @@
                   </li>
                 </ul>
                 <input
-                minlength="0"
-                maxlength="100"
+                  minlength="0"
+                  maxlength="100"
                   type="text"
                   name="select-category"
                   class="form__drop-down-input-hidden"
