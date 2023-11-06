@@ -1,4 +1,4 @@
-import { textareaCounter } from "../utils/constants";
+import { textareaCounter, inputDeleteButton } from "../utils/constants";
 export function handleSubmitForm(e) {
   e.preventDefault();
   const form = e.currentTarget;
@@ -8,6 +8,7 @@ export function handleSubmitForm(e) {
     form.reset();
     button.setAttribute("disabled", true);
     button.classList.add('next-button_disabled');
+    inputDeleteButton.classList.remove('form__input-delete-button_visible');
   }
 }
 
